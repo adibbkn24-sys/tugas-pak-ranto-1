@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AdibLuminescent - Inovasi Tanpa Batas</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#480049",
+                    "surface-container-lowest": "#000000",
+                    "on-error-container": "#ffa8a3",
+                    "surface-container": "#161a21",
+                    "on-primary-fixed": "#002a35",
+                    "outline-variant": "#45484f",
+                    "on-primary-fixed-variant": "#004a5c",
+                    "surface-bright": "#282c36",
+                    "surface-dim": "#0b0e14",
+                    "primary-fixed": "#00cffc",
+                    "on-surface": "#ecedf6",
+                    "on-tertiary-container": "#661466",
+                    "on-surface-variant": "#a9abb3",
+                    "on-tertiary": "#722070",
+                    "on-primary-container": "#004050",
+                    "surface-container-highest": "#22262f",
+                    "tertiary": "#ffb4f4",
+                    "primary": "#69daff",
+                    "secondary-fixed": "#1dfba5",
+                    "tertiary-container": "#fe9cf4",
+                    "on-secondary": "#005a38",
+                    "secondary-container": "#006c44",
+                    "surface": "#0b0e14",
+                    "error-dim": "#d7383b",
+                    "background": "#0b0e14",
+                    "secondary": "#1dfba5",
+                    "tertiary-fixed-dim": "#ef8fe5",
+                    "on-secondary-fixed": "#00452a",
+                    "outline": "#73757d",
+                    "on-error": "#490006",
+                    "error-container": "#9f0519",
+                    "primary-dim": "#00c0ea",
+                    "tertiary-dim": "#ef8fe5",
+                    "secondary-fixed-dim": "#00ec9a",
+                    "error": "#ff716c",
+                    "on-background": "#ecedf6",
+                    "primary-fixed-dim": "#00c0ea",
+                    "surface-tint": "#69daff",
+                    "primary-container": "#00cffc",
+                    "tertiary-fixed": "#fe9cf4",
+                    "on-tertiary-fixed-variant": "#711f6f",
+                    "surface-variant": "#22262f",
+                    "surface-container-high": "#1c2028",
+                    "on-secondary-container": "#e1ffe9",
+                    "secondary-dim": "#00ec9a",
+                    "on-primary": "#004a5d",
+                    "on-secondary-fixed-variant": "#00653f",
+                    "inverse-on-surface": "#52555c",
+                    "surface-container-low": "#10131a",
+                    "inverse-surface": "#f9f9ff",
+                    "inverse-primary": "#006880"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(28, 32, 40, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 selection:text-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400">
+                AdibLuminescent
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-sky-400 font-semibold border-b-2 border-emerald-400 pb-1" href="#home">Beranda</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors duration-300" href="#about">Tentang Kami</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors duration-300" href="#services">Layanan</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors duration-300" href="#portfolio">Portfolio</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors duration-300" href="#testimonials">Testimoni</a>
+</div>
+<a class="hidden md:flex bg-gradient-to-br from-primary to-primary-dim text-on-primary px-6 py-2.5 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(105,218,255,0.4)] transition-all duration-300" href="#contact">
+                Hubungi Kami
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center overflow-hidden pt-20" id="home">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background to-background"></div>
+<img class="w-full h-full object-cover opacity-20" data-alt="Futuristic glowing neon circuit board with deep blue and emerald light paths, cinematic lighting, dark technical atmosphere" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFhUVFRUVFRUWFxAVFRUWFhUVFRUYHSggGBolHRUWITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDjcZFRkrKysrKystKy0rKystKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAL4BCQMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAFAgMEBgABBwj/xABLEAACAQMBBAYGCQEEBgoDAAABAgMABBEhBRIxUQYTIkFhcQcUMoGR0SNCUlNikqGxwXIzQ4LwNGNzk9LxFRdUVYOUorKzwhYkRP/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8ALdA/S+ku7DtDEb8BOoxG5/1i/wB2fH2fKuso4IBBBB1BGoIPeDXjm0NX3oR03uLEhA3WQ51icnA5mM/UP6eFB6LrKr2xOmdncqN2UI5GTHIQrLjiOR91Fl2jGeDE/wBKs37CgD9K9hGaNmjXebGqcN7+k9zfvXAekGy2DMVyQCQQRhlI4givS7Xo7kkP/hv/ACKp/TPoyLr6WCB1n7yQgSYfZk7WQeTYyPGg4COj104DJAxDDKneQBh4Zahm1djzwY66MpvZxkqc47sqTg+FWrbiTW8pCpJEUfJVvqOO8Y7j8CKG7Y6STzRmORYyp/Cc5HAg50NAJ6N7WmtLiO4gbEkZyOTA6Mrc1IyD5137po1rtbZHriHdaMbyfaSTIV4CBxJOAB3ndIrzrHoauvQXb6W1zD6wWNt1qu6b3ZWRQyxzMvfuFs48AeKigrl4jDKsMFSQQdCCNCCOdCpFrsvpr6KhGG0IBmOXAl3dQHIJWQY7m58/6q5BKtBFxSoxrWMKyPjQesPRyIZNn20yRRqzRKHKooy6dhs4HHKmo/pYtlOzJzgZXcIONR2wDr76Dega+37B4c6xSkj+mQBv/dvVZ/SNHvbMuxyhZvy9r+KDyZJ7Xvr0X6Cbceou5AyZSM41wEXv8ya87Sjt++vTHoTjxstD9qSU/Bt3+KC17cigEMkk0aMsaO531VhhVLd48K8d3b5YtjGSTjlk5wK9S+lu+6rZc4zrKFiHjvnDf+kNXlifjQNgUtFrSin4loJlqMCu2eiK2t7O1ubyfsSpvCQsMGONQDuheOSSDjicpzqoeiHol67c9dIv0EBBORpK/wBVPEaZPhjnW/Stt+Ka9lS2J3AFWYq3Ynmj3hvYGnZB3c9+6PsigqHT/pJLtC7eeTRfZiT7qIE7q+euSeZPhQfZuzZZ23YkLkDJGQMDxLECkXJyaMbE23NbruxhME5OVOWPic0C06NXY4wNwz7UZ056NU3Y1gSQx7K8+flW7WaW4ky4eTfKghB7XcqAfxXXuiHRJ4HE1zbMzDHVoChWL8Ta9p/2oDXQjo+UjWSRd3Iyqn2jyLcvKrlUNL7nHIP8DH9hW5Noxrx3h5o4/cUEusNANqdMbO3/ALSXXBIABYnHl/Nci6cekO4uw0UZMMB0Kqe3IPxsO78I055oLn079KsFpvQ2gWecZBbP0UJ/Ew9sg/VHvIrmH/Wztj/tEf8AuIvlVSujUTeoNW8mKKW9wONAEfFSYp6C0We1HjKujsjKcqykgr5EV1nob6UQ2Ir3Q8BOo0P+0Xu8xp4CuFR3FTba4oPW8MyuoZGDKRkMpBDDmCONLrzr0V6aXFkR1bb0Z9qJydxvFfsHxHvzXaei3S+2vl+jbdkA7UT4DDmR3MPEfpQa6W9FIr1M6JMowkmM5H2JB9ZNeHwrgXSXo76tKUmjKEe0gIAYfbiYjDL/AMjg16eoJ0q2BbXsXVz7oI1STshojzUnu5jgaDzZbW2zynbM6vr3qR4EADUeFB5CBpnPjz+NW3pH0QNs7IzoCNVZWUpMmeKZOjDvUn9NaEpsy0KktdFWGcKYjg8jnPCg6T6KOkkd3A+yLw7ysjLCSfaTGsWT9ZeK+A8K5l0v6PSWF1JbSfVJMbfeREncb4ceRBHdUOCdo2V0bddGDKw4qynII94rql/CekNi1wu6t1aIqCNeMjY3pW8FbTdHcVbnoHFZBTVTJk8MeHI8qjMKDpPone4a46q3l3CylmG+yBwnPHEjeP611Tplsm9ks5QJOEbFx1jdpQpLDhrkd1cS9Gu1PV762kJwokCse4K+UYnyDZ91elr7aFu0TgzRYZGXPWJjVSOOaDx9L7fvr0J6K9l3Yso3EmI3BaNesbsgs2ezjAycmvPsi4cDlivU/QG7hTZ1opmjBWCPeG+vZJGSDrocmg5f6XzdRlI55d5Wy6oJGYDHZ3ip0B1P61yB+NdK9M+11nv33GDJGiRqVOQdN5iCNDq5HurmwFBtBRXY+zJLmaO3hXekkbdUdw5k8gBkk+FQI1rrHRPYx2VZLtiU4lLDq4Tp1kUg3d0fiOd7+lTz0CwdNdrR7F2fHs60b6eRTvOPaRT7cp5MxyF5YPKuIq1T9rbUkuppLiZt6SQ5Y9w7goHcAAAB4U5Fs+26veNyesx7AjJGeW9n9aB4W2zxFlmmaXGu7hVLchkaCl7I2Qs0qpCjuWwFTILOe/gBur58O+nNldH+uYKjBixwuSFCjveU67q/r+1d26DdH7KxjxHJG8rD6SXIyfwqPqp4fGg30J6FJZgSShWnxpgdiAHisWnHm3E+Aq4U0s6ngyn3ihnSHpLbWSb8zjJ9lF1eQ8lX+TpQFywGp/5Vz7ph6S4oN6O1xLJwMh1jQ+GD2z5aeJ4VQ+l3T6e8ygPVQ64jU6t/tG+t5cPPjVGubjxoCu1dtyzu0ksjO572OceAHADwFBp7gHWoslxUOWflQLuZc1G3qbeTNI3qC6Sej9pl39mXUV8ozlF+huEx9qCQg93caqd3bSQuY5UaNxxV1KsPcabjcgggkEHIIOCCO8EairXadPbkoIrtY76Eablyu8yj8Ew7anxyaCqrJUmC4onfiwuHUWySWhbiJZVlhU+DkBlGe85pG0+it5bp1rw78JGRNCyzREYznrIyQPfigVb3NELe6wcgkEagjQjyNViOY1OgucUHYuh/pFjG7FfRhhoBOFyw7h1iAdr+oa+HfXWbMQSKJIhGysMqyhSCPAivKcF1Vj6MdKrmyYtA/ZJy0baxv5r3HxGDQehtr7JhuYjDMgZD7ipHBlPcRzrgnTzoS1jICyM0THCSIABJn6rKM7j+Qw3dyHWeiHTeK/AXfWKbGsTLqT3mM73bH6jvFWS92eJkaOUhkcYZSq4YHuOc0HlW7kt9wBY3VxxLOCunEbuBipnQnpO+z7pbiPJQ9mVAdJIyRkf1DiPHzNXj0hdDp7Im4hctCMdsqpaLGQBKcajXR8eB5nmt5IXJd5QX4EYOTj3YoLl6WdhRCRdoWhDW90qyNu8I3c9knlv4OnNTXNpFrpvos6QRHrNl3YDW93opP93KRoM8mwMHuIHOqX0q2DJZXD275O6co+MCVD7Ljz/cGgHbObDV6d2N0W2fcWkL9R2JYkfHWS6bygke1415p2XZOzDAOMgE40AJxk+FegOg/RgPabk0tyjxyPGwSeRFG6dN0A9kYI4cqDz5tiLq7iVRwSSRR5I7AftXpvYvQyxS2jBh4xoznfk1O6Cx9rTvrgfSbo3JHfyRKrkGaQRliWLqH0YsfaOCMmu29Iei8cFjM0U10xSJt0G5kYE4wM66jw5UHnnpBMrSuUG6pZiq6ndUklRk6nTFDI1ott3Z7xyMrKQVwD54BI/Wo+ydnSTypDEu88jBVAGePEkcgMn3UFm9G/R5Lq6Qz6W0bZkY+yWCl1jJ7shSfIVI9JfS/wD6QuPo9LaHKwqNA3AGQjuzjTkMczRrp3tWCxso9kWZDZVZLqXvdiA274MSATyAArn1rgYYSqrA6Agk+fAigkbOltsHrUdz3bjhQPPQ5o90R6KvfTbkMbBRjrGk9iEH6zcN48kHHy1BXoJ0YutoSiQviJCA0xRcAjPZjyO0/wCi515Htmy9gLbRiOCR0QZOMRtvE6lmJXJJ5mgV0a6OwWMXVQrqcF3IG9K2MZbHAcgNBRCaGPBLKmAMksBgDmSarfSjpKlguZbkFyMrEI1Z39wIwPE6Vx3pR00u70bsrhY/u4xuqSOBfUlj56eFBdemXpAtkzFZRRyNwMzINxf6FI7fnw865Xc3OSWJ1OpPOos91UCe6zQSZ7mh09xTEsxojsbo3eXgLQQMyDjKcJEvPMrkKPjQCmlrUas7BVBZicBVBJY8gBqaMw2trby4ui1yANVtZowmeRmw29/hFFJOnksS9Xs+CKwTgTEN+Zx+O4kBY+7FAm19Hs6p1t9LFYQ4yGnOZHH4IFO+x8NKe/8Ax7Yn/fEv/kJfnVRubl5GLyMzu3tM7FmbzY6mmaDQreaTmsFAoGiGyNtXFq2/bzSRHv3GIDf1Lwb3g0OrYoLU3SK2uf8ATrNd4/8A9FniCXzePWKQ8O4frUOHYonkZbKTrPsxzNFBM/gqlyrn+k58KBZreaAhcwywP1c0TxOPqyKyN8GFPwXfOnbPpRcIgjdluIhwhulE6LpjKb/ajOCfYI41u1FnKDvu9tISSCE623HIEA9ag8t6glW91w3Tgg5yDgg92COFdK6I+k+WMiK8ZpI9AJVUGRPF8/2g8ePnXKrnZssRG6yTKRkPbuJVwOOQvaX/ABAU3De93+dKD1ha3ENxHvJMJY3BGQUKsDoQRjzBBrk3pD9HjRn1iyO9H9aIbrND4rkZaPwzlfEcOfbN29Pbv1tvO8baZ3To+O50PZb3irlZeme9jGJYIJuRG/EffgsD7gKDmd1GysQ2Qw9rLLnPMbp/UV0yz2lDtuzjt53iTaFuGWJpW6sXKEaBT3touRzXPA1l9032Nff6ds+RG+8hCZBPHthwx4cqFTbH6OS/2d/dwZ+rLCXUeR6v92NBF2tsXakaFBbSrFghjFGXR8EqRvRgg8O8U5srpVtO2jKLJKBqPpUyVJxntON4HQd/Kn9nWcaE+q9JepUeyrmeLPIFN/GPMe6j1pcbQVDudIrBznIV3Qhs6klmjJBz3UFPuPSHtIyo5kj3kDKv0KcG3c5B4nQa1Pu+mW054ihkbBBU7iDJDHVd7BbB5A0Zm2ltISKTtnZe9uuFO/Hjdym8CRFgHhj+k1JuLnaDxsH6QbPTOmEePBHiwiBU8Dp8aCnbG2XtNskW1w8Z3mfrInxoMklpBjJ56mrNZSxbDjkuJPV3v5kZYI43Enqwc5DuBoF04jjugDiagbRt2cZuOk6yDXfSOSZh/hQOFbywPfUS12N0eTWTaN3J37sduyZPiTGT+tBTXmaR2dyWZ2LE5XLOxyTg+NdD6B9CmuZBLdy9VCuOO4rzaZxG32ddXB8BzG7XpLsKzbetLS4lf7U6RuunLrH3hwHDFSrj01XjDdit7ePkzb76d3ZyAD7zQdctobWCILHcCKKNdAJU3EUan2s4rnfS70lMpMdjK5AOGmdYyDz6td3PjvH4HjXONs9Jbm7YPczF8HKposaH8Ma6Z8ePjQee+4/zQEby+Z2Z5GLsxyzMSSTzJPGhk93yrdvZyysBogOTvzMIowBxO++Afdk05dW9nEpBne4l/wBSu5Ap5GSTDv5qo86AeheRgiIzu3BVBZm8lGpqbebAkg3TdkQZxmPeR7gKe/qAwK/4t2lP0puAhjg6u1UgBhap1TS4+8lBMjcToWxrwoGX48zqSdSTzJoLOm2bG3/0Sz66T76+IfdP4LaM7g7vaLUL210iurs//sTu6j2Y87sacgsS4Ue4UKzWjQbJpOaytGg3mtVmaygTW80USHPePiNKeFkD3A+4UAXNbzRh9mAcVwfeP5qNLs/kD8aCEDWU8bJuR+FJktmFA3mlB6RisKnlQSIbhlO8rFTzUlSPeNalDaLNq+6/i6hj+f2v1oXmth6ApJcKeChfIn+SaZeTxNQxJWzJQPCQ86WZTUTfre/QSBKadS4NQt+th6CQZjmnGuDioW/W9+gfMxrYlNRt+s36B8yHnTsb+JqEXrYegIrMBxGfMn+MVh2gRqgRDzVRvfmOSPcaHmWkF6CXcXbucu7MebMWI8BngKYL01mtgHlQKzWVrBpyOBjwoEZpOakepNyPwp2Kw5g0EKtZouuzV5Z95Of1pZsMfVA93x40ATNbxRZrbHePiB7qb9w+IoJ3rNof7qYeUqH90rOss+Vz7miPnxSoVtBkEd6nHypTw/5wflignF7LgDdr5dSf5FLVrc4AuLgD8UKHHLQSgGhYjycf5/z8qI2VlvaYP+eVAXsNiCXRLt9ftWvylNEo/RvPKCwuFYAlTmKYEEcQdDT3RNSFIxl0bdYZx4g6+GDRzam3GhZsHAlXJGeEiDH6rj8lVHN9q9G+oZleRTunBIDjx4FeVCfVoz/ea+XH30Q27tAyOWJ1PHXlQYtUU91KjQSfEcKbZcH2waST31jppz7qB0FuAdfHOM/rUiPZ9wV3xGWU/W3Rj41E6tjrut+U1aujKO0Tq7SIiggKobtk4x3HQa6+NBV5VcYyAM8MqNcccHGtLeCQLvFAF4b26uPjirdtG9EoUC0Y7qdWU3DuHHssp4j96hbT2QeqVkMgIGGikU6ZBBKNw79RVFVA/p+FPJvAewpHPcB/inF2XMf7tv0+dLisrhchVPiNMfCoI3WfhT8orZDEewvnuD5U+dmy98Zz5j50qSzuCMFDjlp+uutBBI/p+FSrWOQjeVAwHHsgj36VttlTAf2bHx0+dHNgbJYqWkMihRgJGuWkOpwx1AXJ8/Kgr0QfUAA4GT2RoBxJONBUobOnK7wjOOJbdGBjxqy7Ku/V3VvVX7IYY3D9KToGc+R18tBSdsqVtyYi+HyGi3WAj3j9XI1AGRjXGlXBUsnvdf0z+lJKZOr47uFZ1LA6q2n4W+VJRTqT+vM1A/1S8OsHmBSvVYx/ea8sfuajCs3qAtYbFWUgLIBkga73EnAwAKtn/VzKidZ6yiqNS3VTH4DFU7Zd3uMp5HPvrpWyNsGXq4y2g+kYZyOyewPza/4aorN/sAw6Pdvp9m1J8/akFC3MC6es3B8oVXXy641culWdxnYYOcKM53idF+JqlXlhugZznv8APvoEB7P6zXbHyiX/AOxrRlstezcnl24R8ewfGoDR4NbSH/OvyqCWbi1HCOY+cif8FZ67a/dS/wC8X/hqNPDhc9/AeZ4VH9SPOgnTOFkyODaHz7v5rUkq8xUmOyQnGM+eT+9EILFB3D9KAOoBwVBJBzoDrzo9YzheEbH4D9zSkgXNEImReVVGWks3Ws8SKN9QGVmPFfZbQccEj4Uq96P3c+N91XXQAHT4mpuzb5UydMmp0u3151RTL3oh1Z7cpJ8MD+KhrsaIccnzNFtsbX3mNBWvKgkrZxLwRfhToKjgB8KGPc02bqijHrAols3aQRSNNaqfX07HOaIs0u1ddKZu9qFlxmgBlNbLHFFThd1iXVDQacUGgm+tVtrqh7ZpW6aCd63U6w2lug68aANS42NBY4tqa605ebSDR40qsdYRWNOcUQUFwK0WU9woN15ra3NFE2tIm4ovwFNPseI9xHkTUZLqnVu6CXa9FBIcLIw88H+KMWnRe6hJKSA8OIOvLvqBs3am6wNWuDbwOKqA1+9xmPrVUhG3sAsN9gMLnIxpknzxUC+uN7jGR71NWHaN+jj9aHM6sO6gp8y9okgjloeFISVeYqxzwrmmJbFT3VFA98M4HcuvvNEd5fCm57BAeA92n7U16ivj8T86IdhnxT/rmKBiatGeoov67SZL886DmatGWgLrfnnSXvye+hIkre/QSpZyaaD01mtqaBcj02Grb0u3hyaB2GMmp8VocUQ2XszOKOzWIVeFVFQ6nWpCW+lOzL2qlxx6UAxbfWpsVpmk99E7Vc0Aa5t8GnkttKkXo7VSQvZoA9zb0iKDSpt01bgGlANki1rfqhIqU/GjWz7MMtBTZ4iKisatu1Nl4zpVYuoMGopEb0tnphKU5oH458VLS+POheawvQGG2gedbjvzzoN1lYJaA2b7xqQl9Vd66nEnoDNxcA0x11DzcUnrqCHv1m9TdboFb1bzSKUKBYreaTWUDgNbWkrT8SUG0jzRnZdjkimLO1zVu2LZcNKsQT2bYYXOKY2zIFBorPMEWqXty+yTrVAuabLVJ9Y7PGg5k1pUk+lRUjrtaO7OOVqpRy61admN2KREa6ft1MkbsUJuH7fvolO30dAJuJ9aet59KE3EutOQT0VNeXWrNsGYHAqmPJRfY15g0Rcrq1DCqbtixwTpV0sbgMKH7WtAao55JFg0w9HL+0waETR4rKmM0kmlGkGgykk0qkmg1mthqQaygc3qzfprNZmgwVusFboMrYrVYKBdZisAp1EoNxJRK0gpm3ho3YQUE3Zlrw0qyxuEFDLbsiou0NodwNaQ5tbafGqne3BJpy+u899C3fNQL3qamkpJamJGqKftzrVu2f7HuqoWfGrXbvhPdVgGzHt0Uc/R0Glbt0VEnYoitXh1pEUlL2hxqGrVFEC9PW02DUFWpatQXLZG0cY1o40wcVQLO5xVgsL6qh7aFvVevLerZJIGFCLyGrRVpUxUciit1BQ+RKypqtGtmkmg1Wq3WUCaytmtUG6zNJzWZoFVtRSQRTiEcx8aByNamwQ01b7vMfEUUtlHMUDttDRa3woqHGQO8Vqa6Ud4+NVEy5vKCXl1SLq+X7Q+IoZNcg94+NBuaXNNZpsyDmK1vjmKilO1ME1t3pANBPsBrViV+zVdsXAPEfGi7zjd4j4igiO/aopE3ZoE0y59ofEURguFx7Q+IqgftIa0OzRC+kB7x8RQ4moH42pe9UZWp3fHOgfSSiVnc4oMJBzp6KcDv/Wgt1tdeNLlbNV62vV+0PiKJw3anvHxFVCbmKhc8NGmdT3ios4HMUUCljphhRG43R3j4ioEhHMfGoGq3WiRWs0Cqyk71byKD2L0fsoja25Maf2MX1F+7Xwoh6jF90n5F+VR+j3+i2/+xi/+NaIUEf1GL7pPyL8qz1GL7pPyL8qkVlBH9Ri+6T8i/Kt+pRfdp+VflT9ZQMepRfdp+VflWvUovu0/KvyqRWUEf1GL7pPyL8qz1GL7pPyL8qkVlAI2nNbQK5aOMlEMhUIud0Z14acDx5GkT39kiNIREQoJICAtoHJG7jOfo30/CalbQ2VHMcuW9llwCBkMCDk4yePDOO/GgqLN0bgYsTv9suWAbRi/W5PDPCaQDzHIUGRX1mxI3UXDBO1Hu5JVW0yOGGGtalv7IKz4jYKpY7se8d0HGRpzBHuPI04+wYmcOxZmDBstuHXdRW0K4G8I0zjlpilSbDiIAy+BGYwAQNGzqTjJOvl4UCfWrPJH0WRgY3BnJ0wBjJPlw76y0uLaSNpNyMBN7fyq9jdLA7xxpoufIis/6Ai3g+9IGUsyNvDMZckyFdMdokk5zx0xSodgwqjxrvBJSzOoI7TNvEvwyGyRqPsj3glruyHHqhpnVAD3aYI46jTjrTlvJaOpZOqKrgE7qgDPDJIpDbBjLBmaRiGEmrDWRQB1hAA13VC44Y7qk2uzI497AzvBVIbUYUsRp/iNBFvJI0kWP1QuXzulVgwcKWIwzgjhjJGMka61Ft9qWrHW33BkhmZIt2MjfIDMrEahCQRkYI1GRRiazVmLkneKGMEH2FJyd3kSca/hHKoU3R+3bG8mUAQdX/dsYxuxll7yAce4chgID7bs1GWhwMHJMSDdIMoClc72T1L8B3a4pce17QyLEYcO28MFIyVZd/IwpJb+zb2N4DTJGRU+HYcCEMqar1u7nB3eucvIRkc2I8iR3mm4uj8KFNzeQIFACkAMULlGYY4gyOfEnXNAm2uLdzEBBjrQxXeiUbu7nIc8A2h08KI+oxfdJ+RflUWDZITq8SyHqixGer7RfOd7CeJ4Y40SoI/qMX3SfkX5VnqUX3afkX5VIrKBj1KL7tPyr8qz1KL7tPyr8qfrKCP6jF92n5F+VZ6jF90n5F+VSKygj+oxfdJ+RflWeoxfdJ+RflUisoI/qMX3SfkX5VnqMX3SfkX5VIrKD//Z"/>
+</div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 relative z-10">
+<div class="md:col-span-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-xs font-label font-medium text-secondary uppercase tracking-widest">Inovasi Digital Terdepan</span>
+</div>
+<h1 class="text-5xl md:text-8xl font-headline font-extrabold tracking-tighter mb-8 leading-[0.9] text-on-surface">
+                    Menciptakan <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Masa Depan</span> <br/>
+                    Visual Anda.
+                </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+                    Kami menghadirkan solusi teknologi dengan estetika premium untuk membantu bisnis Anda bersinar di jagat digital.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_10px_40px_-10px_rgba(105,218,255,0.5)] transition-all">
+                        Mulai Proyek
+                    </button>
+<button class="border border-outline-variant text-on-surface px-8 py-4 rounded-full font-bold text-lg hover:bg-white/5 transition-all">
+                        Lihat Portofolio
+                    </button>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+<span class="text-[10px] font-label uppercase tracking-widest">Scroll Down</span>
+<div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</section>
+<!-- Tentang Kami Section -->
+<section class="py-24 bg-surface" id="about">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Collaborative team working in a modern minimalist office with glass walls, soft ambient light, professional atmosphere" src="https://i.ibb.co.com/3yRRZFbw/16f7442c-7c67-4bb7-b738-0134d864a7a5.jpg"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+</div>
+<!-- Floating Stats Card -->
+<div class="absolute -bottom-10 -right-10 glass-card p-8 rounded-2xl hidden md:block">
+<div class="text-4xl font-headline font-extrabold text-secondary mb-1">1000+</div>
+<div class="text-sm font-label text-on-surface-variant">AURA</div>
+</div>
+</div>
+<div>
+<h2 class="text-3xl font-headline font-bold mb-6 flex items-center gap-4">
+<span class="w-12 h-[2px] bg-secondary"></span>
+                    Tentang Kami
+                </h2>
+<h3 class="text-4xl font-headline font-extrabold mb-8 text-on-surface leading-tight">
+                    Dedikasi Kami Adalah Kesuksesan Digital Anda.
+                </h3>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+                    Luminescent adalah studio kreatif yang berbasis di Indonesia, berfokus pada penggabungan antara fungsionalitas teknologi tinggi dan desain editorial yang elegan. Kami percaya bahwa setiap brand memiliki cerita unik yang layak diceritakan melalui antarmuka yang memukau.
+                </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<div class="text-primary font-bold mb-2">Visi</div>
+<p class="text-sm text-on-surface-variant italic">"Menjadi katalisator transformasi digital melalui kreativitas tanpa batas."</p>
+</div>
+<div>
+<div class="text-secondary font-bold mb-2">Misi</div>
+<p class="text-sm text-on-surface-variant italic">"Membangun ekosistem digital yang human-centric dan futuristik."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Layanan Section (Bento Grid) -->
+<section class="py-24 bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-3xl font-headline font-bold mb-4">Layanan Kami</h2>
+<p class="text-on-surface-variant max-w-xl">Solusi komprehensif untuk kebutuhan digital Anda, dari konsep hingga peluncuran.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Service 1 -->
+<div class="group p-10 rounded-2xl bg-surface-container border border-outline-variant/10 hover:border-primary/50 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-16 translate-x-16 blur-2xl group-hover:bg-primary/20 transition-all"></div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6">design_services</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Desain UI/UX</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Menciptakan antarmuka yang intuitif dan pengalaman pengguna yang emosional.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Wireframing</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Visual Design</li>
+</ul>
+</div>
+<!-- Service 2 -->
+<div class="group p-10 rounded-2xl bg-surface-container border border-outline-variant/10 hover:border-secondary/50 transition-all duration-300 relative overflow-hidden md:col-span-1">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-16 translate-x-16 blur-2xl group-hover:bg-secondary/20 transition-all"></div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">code</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Web Dev</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Pengembangan web responsif dengan performa tinggi dan keamanan terjamin.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> React / Next.js</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> E-commerce Engine</li>
+</ul>
+</div>
+<!-- Service 3 -->
+<div class="group p-10 rounded-2xl bg-surface-container border border-outline-variant/10 hover:border-primary-dim/50 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-dim/5 rounded-full -translate-y-16 translate-x-16 blur-2xl group-hover:bg-primary-dim/20 transition-all"></div>
+<span class="material-symbols-outlined text-4xl text-primary-dim mb-6">insights</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Strategi Digital</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Menganalisis data untuk pertumbuhan bisnis Anda yang berkelanjutan.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> SEO Optimization</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Brand Consulting</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-24 bg-surface" id="portfolio">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="text-3xl font-headline font-bold mb-4">Portfolio</h2>
+<p class="text-on-surface-variant max-w-xl">Intip hasil karya terbaik kami yang telah membantu klien mencapai target mereka.</p>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-2 rounded-full border border-primary text-primary text-sm font-bold">Semua</button>
+<button class="px-6 py-2 rounded-full text-on-surface-variant text-sm font-bold hover:text-on-surface">Web</button>
+<button class="px-6 py-2 rounded-full text-on-surface-variant text-sm font-bold hover:text-on-surface">App</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Project 1 -->
+<div class="md:col-span-8 group relative rounded-3xl overflow-hidden aspect-[16/9]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern analytics dashboard on a dark screen, glowing blue and green charts, clean UI design, professional data visualization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE9GM7FBLcLVovXHAXa1pTr7-ND3ZeISoZ5lZM7E6UgYb8JZfTx3714s_RVc6zjNjAJgDesvzwVqWFovExP0YmJ-IyIBtbUfAcr_ceOfHQ3PDU4KHZvyG9qvltGb4h2sqDWcpafdeIoxExhboTTdRYMQsXZc68vsFGwnP_xk3qib1mssmuB-qFrHbA9ict3oXrC4C_XCGId_N1W1LNviRV7JEKJCaFjt-6LxlJ_4JEAplb3xXLgz86G9xyXcVEsc-hv-mGLPCnYH6h"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-primary/20 backdrop-blur-md text-primary text-xs rounded-full uppercase tracking-tighter">Fintech</span>
+</div>
+<h4 class="text-3xl font-headline font-extrabold text-on-surface">Lumina Bank App</h4>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="md:col-span-4 group relative rounded-3xl overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Elegant ecommerce mobile app display on a sleek phone, showing high-end fashion items, minimalist clean layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVNMlNdFPYrcmxKApvZFa-Bt7KPlTz2bNgSkusqtEPDPJRstXiGcDPLHf6YFqJWFv5_2g4QLuzv8iQletyMSV_8XNG4WWtXYgwzBvNAyF2PdK6RWxle5Sta6rcLF3F5AiuCxX2amNwIIV7Ujljz9YRTn5ow0yCJt_Y4k1TYp0kVvodgA_L3Sb6fmY7bCMsMq52mAMwnKoLWT6UGG85bisKwo4_bRywvKXPLJbp9_nXIjUDF3smfF36e7jvWS3xMpBof_UiTIqf4vZD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-secondary/20 backdrop-blur-md text-secondary text-xs rounded-full uppercase tracking-tighter">E-commerce</span>
+</div>
+<h4 class="text-2xl font-headline font-extrabold text-on-surface">Vogue Store</h4>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="md:col-span-4 group relative rounded-3xl overflow-hidden aspect-square md:aspect-auto">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Creative agency landing page with bold typography, asymmetric layout, vibrant color accents, dark mode aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvN3Y3e_X7OJaCLCuH5_NZvrdlxWVamU5GmaoJiZgRp1QwyXWGlXxpjoJYmL4E3K_DxmSv9V4M8OPZd4j4VIQg1tOoDiaWiZXVA2oreJVyw33wD8YhCISQwKD2X895XSmzhhZDtcLP8gE2yrCNC1ksAdMGNc07R4J-qTy_GoCI_UNEqD9e0Z7IFunuuXZofoBSsLVIv5MVHziEtVJmnSSe6cLh1nxdviaPEAoQ1mUMdv6kJrrQY0DDRVG8UhlxBxpZBsdHqP_pP_zA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-primary-dim/20 backdrop-blur-md text-primary-dim text-xs rounded-full uppercase tracking-tighter">Corporate</span>
+</div>
+<h4 class="text-2xl font-headline font-extrabold text-on-surface">Nexus Corp Web</h4>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="md:col-span-8 group relative rounded-3xl overflow-hidden aspect-[16/9]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Mobile app interface for a fitness tracker, dark theme with neon emerald accents, activity rings, clean typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_K8icYB3wNO5ZNjhjXDD9iiVbi0bb-YjH6qzjbxPnuxFtYLjFfhwwyilUAHWuvbz3mwnFbZWWnciNPJ-qVaxnh-eSrBpMb0ZzV_uaEDzJS_Ab3pWTfWhqRSI3vq7eDAwWHPwvVyOxZlUVHW2-TjmygviDg_Dsp2joD_m-huNBCvLsrDto2ZRYn2f19a69M98wJ4TzLKDXsCio4LYXmgZ-E8S_sCUpFwrg_8Jp2dQcQBuldKmWsZ2cYuRgKfTxenFDtZUhXFr47NCB"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-secondary/20 backdrop-blur-md text-secondary text-xs rounded-full uppercase tracking-tighter">Lifestyle</span>
+</div>
+<h4 class="text-3xl font-headline font-extrabold text-on-surface">Aura Fitness</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimoni Section -->
+<section class="py-24 bg-surface-container-low" id="testimonials">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-headline font-bold mb-4">Apa Kata Klien?</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/10 relative">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">format_quote</span>
+</div>
+<p class="text-on-surface-variant italic mb-8 leading-relaxed">
+                        "Luminescent benar-benar mengubah cara kami berinteraksi dengan pelanggan. Desain mereka tidak hanya cantik, tapi juga fungsional."
+                    </p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Headshot of a confident male executive, soft natural lighting, blurred office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcGER3mJ4c-ze72Y7jVJLncnCF0LRInGg4wCEc1sK5iagwlzCl7g-exfIftYpyZwVp7Mowf0c-nuj9ERzub614prOUtOqkIFC9UyRsrLTbtwPQui2X1aJK4H5wT0R-sJ0QEYMIZyIqQ8Nb9K3vWV1OlIUFFqokN90yhafBANKkIGzr-AzdEmKimfhof0L93CWW0M-ykAyNlDkFv6sBJo1nCxWJ5AryKHgWLsaFnUQH9OM3CrwrsO_NudpY70MSXOFXtJvSlhP_Ttna"/>
+<div>
+<div class="font-bold">Andi Pratama</div>
+<div class="text-xs text-on-surface-variant">CEO, TechForward</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/10 relative">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">format_quote</span>
+</div>
+<p class="text-on-surface-variant italic mb-8 leading-relaxed">
+                        "Bekerja sama dengan tim Luminescent adalah investasi terbaik bagi startup kami. Responsif dan sangat profesional."
+                    </p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of a smiling professional woman, warm lighting, blurred city park background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlFr_hip8r02aqr6qSBzpis3a4iXaVVz9c6uhJ_YxWCAH_kiIBMZ1tv8lNtuY0yajIpDudehj_TkcYI5EhCzw4Lm9fglMjJ5gLFhlae8tkKov2gj165WwOf_yWT3ZnmD6a18mMRErggZ2QMlicOgYyD5sUXCT3I40kAY8mfyJq3yPCeDdMjhYn4_vv4sqBxdBbWACkXKFsVslWNb9cmR3p-MjUs7rqCkTjlDXtkTqgJZvJpgJNloxWkBogaQlZRS5Lt0rhdBdAeWks"/>
+<div>
+<div class="font-bold">Siska Amalia</div>
+<div class="text-xs text-on-surface-variant">Founder, Bloom.id</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/10 relative">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary-dim/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-dim">format_quote</span>
+</div>
+<p class="text-on-surface-variant italic mb-8 leading-relaxed">
+                        "Kualitas visual yang mereka hasilkan setara dengan standar internasional. Sangat merekomendasikan layanan mereka."
+                    </p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Professional man with glasses, neutral background, cinematic soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD42r6Zzs8xGo6mNEJFV8QpL3LOwXOuyZ6grWzVIIjNlFHvdbzv8xFD3ldvylPqK1LTak1Wi2pBrtuIGdpLwcjl-a5wKZ-RWAxhzA3V0bV7M-fXtHIHcXnCE9V4AWI4FB1vyI4uHA7P_fhouhtN-0Kh37PbO6PN7Gpj7Si8gSyryo8h7S9lED3oXWcv3Y7hc8GHlgJxkkUk7c2fFDW0VT_ab4zoRlMFaj22CkpwSxIqisPmdouj_3O8BAuHAhm7TnpjbXeczwlDbv-t"/>
+<div>
+<div class="font-bold">Budi Santoso</div>
+<div class="text-xs text-on-surface-variant">CTO, Global Vision</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hubungi Kami Section -->
+<section class="py-24 bg-surface relative overflow-hidden" id="contact">
+<!-- Glow Effect -->
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/10 blur-[120px] rounded-full"></div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20">
+<div>
+<h2 class="text-5xl font-headline font-extrabold mb-8 leading-tight">
+                    Mari Buat Sesuatu yang <span class="text-secondary">Luar Biasa</span> Bersama.
+                </h2>
+<p class="text-on-surface-variant text-lg mb-12">
+                    Punya ide brilian atau butuh konsultasi? Kami siap membantu mewujudkannya menjadi realitas digital.
+                </p>
+<div class="space-y-6">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<div class="text-sm text-on-surface-variant">Email Kami</div>
+<div class="text-lg font-bold">Adibluminescent.id@Gmail.com</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary">phone_iphone</span>
+</div>
+<div>
+<div class="text-sm text-on-surface-variant">Telepon / WA</div>
+<div class="text-lg font-bold">+62 812-3456-7890</div>
+</div>
+</div>
+</div>
+<div class="flex gap-4 mt-12">
+<a class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center hover:bg-primary/20 transition-all" href="#">
+<img alt="FB" class="w-5 h-5 invert opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdyKWPBT7kLjNMIckDgfogXsnKUQjuKKL4n6zaEmGnXo-GD6fZzL5cgTrqgrzs6iA7JhCA5CNK1xE83KGUiwvbds9huoG-4AsUtd8dutib5By8LQ-QIGen8OpzFpMtz5urjZQYWSYS2C0nnUni192FdmzZS8cZdhFpSQhUVbfINFhybAcABkjIVukwmiGzWsWMGSAE7ITDH4G_m-DNhgO51C-cx5zyDVwGyH6vSG8Fq0LWP0Lma6ECCwhD963FvyeIfSd3B2OospV_"/>
+</a>
+<a class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center hover:bg-primary/20 transition-all" href="#">
+<img alt="IG" class="w-5 h-5 invert opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpHubHy36oDLOWNi7dHe3E7KgPfrD7ge_KZeU4-QEevfOLvlk4kCTN0eCERmj6EEYRhcr0lkWH0189U_rHmHKHmZNvmxybHqGyrYYOIZTiFC5lt9kSZOg1FiF0I99W79tOzIDr-38ucBD-3_a4O9iC6MLuseLCw5oiY0nM6igHH-2FNxEDEbRZIjAJG6qBoWsjSZh3Hl-fQLgc_av8OcHQ0xDUI-_uEwtwNsDB6OXGBucDgHGzBGRI613ZE3PYB2KUITEuTujrL-_F"/>
+</a>
+<a class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center hover:bg-primary/20 transition-all" href="#">
+<img alt="Dribbble" class="w-5 h-5 invert opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrKN7XJXt8FLkVaOVRurQNgj9_q2mlGBF9uT5khIvntUAnSAW2Ujoly0m3eoURIB5LMm7_ox3EpaOykutBDUN2nuURzON1TN9BqFCUsk43-DO3vy2ZcwM21tV9gaDGmMIxtiR2sBLT0Hi4xf7vMoD8umbJBG4fNsGFG-GthbW4QUs0G-UbgUdsXWWTOL4D1nJj1-Hk-4fI2-XKgVgwZJ6D50lNoShz44RhKDBhnxsQFMb6xe7ln062nsAbQLl4Oy8bsy5yUDB9a7VC"/>
+</a>
+</div>
+</div>
+<div class="glass-card p-10 rounded-3xl border border-outline-variant/10">
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-label font-medium mb-2 text-on-surface-variant">Nama Lengkap</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-secondary transition-all px-4 py-3 text-on-surface" placeholder="Masukkan nama Anda" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-label font-medium mb-2 text-on-surface-variant">Alamat Email</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-secondary transition-all px-4 py-3 text-on-surface" placeholder="nama@perusahaan.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-label font-medium mb-2 text-on-surface-variant">Pesan</label>
+<textarea class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-secondary transition-all px-4 py-3 text-on-surface" placeholder="Ceritakan proyek Anda..." rows="4"></textarea>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-secondary text-on-primary font-bold py-4 rounded-full hover:shadow-[0_0_20px_rgba(29,251,165,0.3)] transition-all" type="submit">
+                        Kirim Pesan
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-slate-900/50">
+<div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center">
+<div class="text-lg font-bold text-sky-400 mb-6 md:mb-0">
+                Luminescent
+            </div>
+<div class="flex gap-8 mb-6 md:mb-0">
+<a class="text-slate-500 hover:text-sky-300 transition-colors" href="#">Kebijakan Privasi</a>
+<a class="text-slate-500 hover:text-sky-300 transition-colors" href="#">Syarat &amp; Ketentuan</a>
+<a class="text-slate-500 hover:text-sky-300 transition-colors" href="#">Peta Situs</a>
+</div>
+<div class="text-slate-500 text-sm">
+                © 2024 Luminescent Portfolio. Semua Hak Dilindungi.
+            </div>
+</div>
+</footer>
+</body></html>
